@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: gray;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 2px solid #333;
+  cursor: pointer;
+  background-color: #fff;
+}
+.box:hover {
+  background-color: #f0f0f0;
+}
+.box.filled {
+  pointer-events: none;
+  background-color: #ddd;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color:rgb(83, 188, 223);
+  color: yellow;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #6c6b6e;
+}
+.message {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: yellow
+  
+}
